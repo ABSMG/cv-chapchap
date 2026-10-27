@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="sw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Tengeneza CV ya kisasa kwa Kiswahili au Kiingereza, angalia muonekano wake na uhifadhi kama PDF.">
+<meta name="theme-color" content="#087f5b">
+<title>CV ChapChap — Tengeneza CV ya Kisasa</title>
+<style>
+:root{--green:#087f5b;--green2:#0b9b6c;--ink:#17212b;--muted:#64748b;--line:#dce5e1;--bg:#f3f7f5;--card:#fff;--blue:#164e9a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+button,input,textarea,select{font:inherit}button{cursor:pointer}.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px clamp(16px,5vw,72px);background:#fff;border-bottom:1px solid #e7eeea;position:sticky;top:0;z-index:5}.brand{font-size:1.35rem;font-weight:900;letter-spacing:-.04em}.brand span{color:var(--green)}.toplinks{display:flex;align-items:center;gap:12px}.btn{border:0;border-radius:12px;padding:12px 17px;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none}.btn-primary{background:var(--green);color:#fff}.btn-primary:hover{background:#066b4d}.btn-light{background:#edf5f1;color:#175b45}.btn-dark{background:#17212b;color:#fff}.hero{padding:54px clamp(16px,7vw,100px) 46px;background:linear-gradient(135deg,#fff 0%,#eaf8f0 100%);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.8fr);gap:34px;align-items:center}.eyebrow{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--green);font-weight:850}.hero h1{font-size:clamp(2.2rem,5vw,4.1rem);line-height:1.05;letter-spacing:-.055em;margin:12px 0 18px;max-width:760px}.hero p{color:#52616c;font-size:1.1rem;max-width:650px}.hero-art{background:#fff;border:1px solid #dbece2;border-radius:24px;padding:24px;box-shadow:0 22px 55px #174a3212;transform:rotate(1deg)}.mock-line{height:9px;background:#e5eee9;border-radius:8px;margin:12px 0}.mock-line.short{width:42%}.mock-line.mid{width:72%}.mock-head{height:16px;width:55%;background:var(--green);border-radius:8px;margin-bottom:14px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.chip{background:#fff;border:1px solid #d6e9de;color:#255844;border-radius:30px;padding:7px 11px;font-size:.83rem}.wrap{max-width:1440px;margin:auto;padding:34px clamp(14px,4vw,56px) 64px}.section-heading{margin-bottom:22px}.section-heading h2{font-size:1.8rem;letter-spacing:-.04em;margin:0 0 5px}.section-heading p{color:var(--muted);margin:0}.workspace{display:grid;grid-template-columns:minmax(310px,.9fr) minmax(0,1.1fr);gap:22px;align-items:start}.panel{background:var(--card);border:1px solid #e2eae6;border-radius:20px;padding:22px;box-shadow:0 10px 30px #102d1d08}.panel h3{margin:0 0 6px;font-size:1.2rem}.subtext{font-size:.9rem;color:var(--muted);margin:0 0 20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.field{min-width:0}.field.full{grid-column:1/-1}label{display:block;font-weight:700;font-size:.88rem;margin:0 0 6px}input,textarea,select{width:100%;border:1px solid #d6e0db;background:#fff;border-radius:10px;padding:11px 12px;color:var(--ink);margin-bottom:14px;outline:none}input:focus,textarea:focus,select:focus{border-color:var(--green2);box-shadow:0 0 0 3px #0b9b6c19}textarea{min-height:85px;resize:vertical}.hint{font-size:.78rem;color:var(--muted);margin:-8px 0 12px}.actions{display:flex;gap:10px;flex-wrap:wrap}.actions .btn{flex:1}.template-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:18px}.template-option{border:1px solid #dce5e1;background:#fff;border-radius:11px;padding:10px 6px;text-align:center;font-size:.82rem;font-weight:750;color:#42514a}.template-option.active{border:2px solid var(--green);background:#f0faf5;color:var(--green)}.preview-panel{position:sticky;top:90px}.preview-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}.cv-paper{background:#fff;border:1px solid #dfe5e2;box-shadow:0 8px 30px #17212b12;min-height:650px;padding:36px 34px;color:#202a32;overflow-wrap:anywhere}.cv-header{border-bottom:3px solid var(--green);padding-bottom:16px;margin-bottom:20px}.cv-paper h2{font-size:2rem;line-height:1.15;margin:0 0 7px;color:var(--green);overflow-wrap:anywhere}.cv-role{font-size:1.05rem;font-weight:750;margin-bottom:9px}.contact{font-size:.85rem;color:#58656d;display:flex;gap:8px;flex-wrap:wrap}.cv-section{margin:19px 0}.cv-section h3{font-size:.88rem;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid #dce5e1;padding-bottom:6px;margin:0 0 8px;color:var(--green)}.cv-section p{margin:0;white-space:pre-line;font-size:.92rem}.cv-section .empty{color:#94a3a0;font-style:italic}.cv-footer{font-size:.72rem;color:#84918b;margin-top:28px}.notice{border:1px solid #f1dba2;background:#fff9e8;color:#6e5417;padding:13px 14px;border-radius:12px;font-size:.86rem;margin-top:18px}.notice strong{display:block;margin-bottom:3px}.payment{margin-top:18px;background:#f6faf8;border:1px solid #dbe8e0;border-radius:14px;padding:16px}.payment h4{margin:0 0 6px}.price{font-size:1.45rem;font-weight:900;color:var(--green)}.payment p{font-size:.87rem;color:#52616c;margin:4px 0 12px}.payment .btn{width:100%}.footer{padding:26px 16px;text-align:center;color:#64748b;font-size:.85rem}.status{font-size:.85rem;color:var(--green);min-height:22px;margin-top:10px}.template-blue .cv-header{border-color:var(--blue)}.template-blue .cv-paper h2,.template-blue .cv-section h3{color:var(--blue)}.template-simple .cv-header{border-bottom:1px solid #cbd5d1}.template-simple .cv-paper h2,.template-simple .cv-section h3{color:#222}.template-simple .cv-section h3{letter-spacing:.04em}.hidden{display:none!important}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:38px}.hero-art{max-width:520px}.workspace{grid-template-columns:1fr}.preview-panel{position:static}.topbar{position:static}}
+@media(max-width:520px){.toplinks .btn{padding:10px;font-size:.84rem}.hero h1{font-size:2.45rem}.panel{padding:16px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.cv-paper{padding:24px 18px;min-height:520px}.cv-paper h2{font-size:1.65rem}.template-row{gap:5px}.template-option{font-size:.75rem}.preview-toolbar .btn{padding:10px}}
+@media print{body{background:#fff}.topbar,.hero,.form-panel,.section-heading,.preview-toolbar,.footer,.notice,.payment{display:none!important}.wrap{padding:0;max-width:none}.workspace{display:block}.panel.preview-panel{border:0;box-shadow:none;padding:0}.cv-paper{box-shadow:none;border:0;padding:12mm;min-height:0;width:100%;color:#111}.cv-paper h2,.cv-section h3{print-color-adjust:exact;-webkit-print-color-adjust:exact}.cv-footer{display:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">CV <span>ChapChap</span></div>
+  <div class="toplinks"><a href="#maker" class="btn btn-primary">Tengeneza CV <span aria-hidden="true">→</span></a></div>
+</header>
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">CV yako, hatua inayofuata</div>
+    <h1>Tengeneza CV ya kitaalamu kwa urahisi.</h1>
+    <p>Jaza taarifa zako, chagua muonekano unaoupenda, kagua CV yako na uhifadhi kama PDF. Inafanya kazi moja kwa moja kwenye simu au kompyuta.</p>
+    <a class="btn btn-primary" href="#maker">Anza kutengeneza CV</a>
+    <div class="chips"><span class="chip">✓ Rahisi kutumia</span><span class="chip">✓ Templates 3</span><span class="chip">✓ PDF kupitia print</span></div>
+  </div>
+  <div class="hero-art" aria-label="Mfano wa muonekano wa CV">
+    <div class="mock-head"></div><div class="mock-line short"></div><div class="mock-line mid"></div>
+    <div style="height:1px;background:#dce5e1;margin:22px 0"></div>
+    <div class="mock-line short"></div><div class="mock-line"></div><div class="mock-line mid"></div>
+    <div style="height:1px;background:#dce5e1;margin:22px 0"></div>
+    <div class="mock-line short"></div><div class="mock-line mid"></div><div class="mock-line"></div>
+  </div>
+</section>
+<section class="wrap" id="maker">
+  <div class="section-heading"><h2>CV yako inaanzia hapa</h2><p>Jaza sehemu unazohitaji. Epuka kuweka taarifa nyeti zisizohitajika kwenye CV.</p></div>
+  <div class="workspace">
+    <section class="panel form-panel">
+      <h3>Taarifa zako</h3><p class="subtext">CV inasasishwa unapobadilisha taarifa.</p>
+      <div class="form-grid">
+        <div class="field full"><label for="name">Jina kamili *</label><input id="name" autocomplete="name" placeholder="Mf. Juma Hassan" maxlength="100"></div>
+        <div class="field full"><label for="title">Kazi au nafasi unayoomba</label><input id="title" placeholder="Mf. Mhasibu" maxlength="120"></div>
+        <div class="field"><label for="phone">Simu</label><input id="phone" type="tel" autocomplete="tel" placeholder="Mf. 07..." maxlength="35"></div>
+        <div class="field"><label for="email">Barua pepe</label><input id="email" type="email" autocomplete="email" placeholder="jina@example.com" maxlength="150"></div>
+        <div class="field full"><label for="location">Mahali unapoishi (hiari)</label><input id="location" placeholder="Mf. Dar es Salaam" maxlength="100"></div>
+        <div class="field full"><label for="summary">Wasifu mfupi (hiari)</label><textarea id="summary" placeholder="Eleza kwa sentensi chache uzoefu, uwezo na malengo yako ya kazi." maxlength="1200"></textarea></div>
+        <div class="field full"><label for="edu">Elimu</label><textarea id="edu" placeholder="Shahada/Diploma, chuo, mwaka wa kuanza na kumaliza" maxlength="2000"></textarea></div>
+        <div class="field full"><label for="exp">Uzoefu wa kazi</label><textarea id="exp" placeholder="Nafasi ya kazi, mwajiri, tarehe na majukumu muhimu" maxlength="3000"></textarea></div>
+        <div class="field full"><label for="skills">Ujuzi</label><textarea id="skills" placeholder="Mf. Excel, mawasiliano, huduma kwa wateja" maxlength="1500"></textarea></div>
+        <div class="field full"><label for="languages">Lugha (hiari)</label><input id="languages" placeholder="Mf. Kiswahili, English" maxlength="500"></div>
+        <div class="field full"><label for="certs">Vyeti au mafunzo (hiari)</label><textarea id="certs" placeholder="Jina la cheti, taasisi na mwaka" maxlength="1500"></textarea></div>
+      </div>
+      <label>Chagua template</label>
+      <div class="template-row" role="group" aria-label="Chagua template">
+        <button type="button" class="template-option active" data-template="green" aria-pressed="true">Kisasa Green</button>
+        <button type="button" class="template-option" data-template="blue" aria-pressed="false">Professional Blue</button>
+        <button type="button" class="template-option" data-template="simple" aria-pressed="false">Rahisi</button>
+      </div>
+      <div class="actions"><button type="button" id="clearBtn" class="btn btn-light">Futa taarifa</button><button type="button" id="printBtn" class="btn btn-primary">Pakua / Hifadhi PDF</button></div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <div class="notice"><strong>Kuhusu PDF na malipo</strong>Kitufe cha PDF hutumia print dialog ya kifaa chako; chagua “Save as PDF” au “Hifadhi kama PDF”. Hakuna malipo yanayothibitishwa na ukurasa huu kwa sasa.</div>
+      <div class="payment">
+        <h4>Huduma ya CV ChapChap</h4>
+        <div class="price">TSh 7,000 <span style="font-size:.8rem;font-weight:600;color:#64748b">/ CV</span></div>
+        <p>Sehemu ya malipo imeonyeshwa kwa taarifa tu. Kabla ya kupokea malipo ya wateja, weka namba rasmi ya biashara na uthibitishaji wa malipo kutoka kwa mtoa huduma. Usitume fedha kwenye namba isiyothibitishwa.</p>
+        <button type="button" class="btn btn-dark" id="paymentInfoBtn">Angalia hali ya malipo</button>
+        <p id="paymentStatus" class="status" aria-live="polite"></p>
+      </div>
+    </section>
+    <section class="panel preview-panel">
+      <div class="preview-toolbar"><div><h3>Muonekano wa CV</h3><p class="subtext" style="margin:3px 0 0">Mfano unaobadilika kulingana na taarifa zako.</p></div><button type="button" id="printBtnTop" class="btn btn-light">Hifadhi PDF</button></div>
+      <article id="cvPaper" class="cv-paper">
+        <header class="cv-header"><h2 id="pName">Jina lako kamili</h2><div id="pTitle" class="cv-role">Nafasi ya kazi unayoomba</div><div class="contact"><span id="pPhone">Simu</span><span id="pEmail">Barua pepe</span><span id="pLocation"></span></div></header>
+        <section class="cv-section" id="summarySection"><h3>Wasifu mfupi</h3><p id="pSummary" class="empty">Wasifu wako utaonekana hapa.</p></section>
+        <section class="cv-section"><h3>Elimu</h3><p id="pEdu" class="empty">Ongeza historia yako ya elimu.</p></section>
+        <section class="cv-section"><h3>Uzoefu wa kazi</h3><p id="pExp" class="empty">Ongeza uzoefu wa kazi au mafunzo kwa vitendo.</p></section>
+        <section class="cv-section"><h3>Ujuzi</h3><p id="pSkills" class="empty">Ongeza ujuzi unaohusiana na nafasi unayoomba.</p></section>
+        <section class="cv-section" id="languagesSection"><h3>Lugha</h3><p id="pLanguages" class="empty">Ongeza lugha unazozungumza.</p></section>
+        <section class="cv-section" id="certsSection"><h3>Vyeti na mafunzo</h3><p id="pCerts" class="empty">Ongeza vyeti au mafunzo.</p></section>
+      </article>
+    </section>
+  </div>
+</section>
+</main>
+<footer class="footer">© <span id="year"></span> CV ChapChap. Hakiki taarifa zote kabla ya kutuma CV kwa mwajiri.</footer>
+<script>
+(function(){
+'use strict';
+const ids=['name','title','phone','email','location','summary','edu','exp','skills','languages','certs'];
+const mapping={name:'pName',title:'pTitle',phone:'pPhone',email:'pEmail',location:'pLocation',summary:'pSummary',edu:'pEdu',exp:'pExp',skills:'pSkills',languages:'pLanguages',certs:'pCerts'};
+const placeholders={name:'Jina lako kamili',title:'Nafasi ya kazi unayoomba',phone:'Simu',email:'Barua pepe',location:'',summary:'Wasifu wako utaonekana hapa.',edu:'Ongeza historia yako ya elimu.',exp:'Ongeza uzoefu wa kazi au mafunzo kwa vitendo.',skills:'Ongeza ujuzi unaohusiana na nafasi unayoomba.',languages:'Ongeza lugha unazozungumza.',certs:'Ongeza vyeti au mafunzo.'};
+const status=document.getElementById('status');
+function render(){
+  ids.forEach(id=>{
+    const out=document.getElementById(mapping[id]);
+    const value=document.getElementById(id).value.trim();
+    out.textContent=value||placeholders[id];
+    out.classList.toggle('empty',!value && !['name','title','phone','email','location'].includes(id));
+  });
+  document.getElementById('summarySection').classList.toggle('hidden',!document.getElementById('summary').value.trim());
+  document.getElementById('languagesSection').classList.toggle('hidden',!document.getElementById('languages').value.trim());
+  document.getElementById('certsSection').classList.toggle('hidden',!document.getElementById('certs').value.trim());
+}
+ids.forEach(id=>document.getElementById(id).addEventListener('input',render));
+document.querySelectorAll('[data-template]').forEach(btn=>btn.addEventListener('click',()=>{
+  const paper=document.getElementById('cvPaper');
+  paper.classList.remove('template-blue','template-simple');
+  if(btn.dataset.template==='blue')paper.classList.add('template-blue');
+  if(btn.dataset.template==='simple')paper.classList.add('template-simple');
+  document.querySelectorAll('[data-template]').forEach(b=>{const active=b===btn;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
+}));
+function printCV(){
+  if(!document.getElementById('name').value.trim()){
+    status.textContent='Tafadhali jaza jina lako kamili kabla ya kuhifadhi CV.';
+    document.getElementById('name').focus();return;
+  }
+  render();
+  status.textContent='Katika dirisha la kuchapisha, chagua “Save as PDF” au “Hifadhi kama PDF”.';
+  window.print();
+}
+document.getElementById('printBtn').addEventListener('click',printCV);
+document.getElementById('printBtnTop').addEventListener('click',printCV);
+document.getElementById('clearBtn').addEventListener('click',()=>{
+  if(!confirm('Una uhakika unataka kufuta taarifa zote ulizoandika?'))return;
+  ids.forEach(id=>document.getElementById(id).value='');
+  render();status.textContent='Taarifa za fomu zimefutwa.';
+});
+document.getElementById('paymentInfoBtn').addEventListener('click',()=>{
+  document.getElementById('paymentStatus').textContent='Malipo ya moja kwa moja bado hayajaunganishwa. Hakuna namba ya malipo iliyowekwa na hakuna uthibitisho wa malipo unaofanyika kwenye ukurasa huu.';
+});
+document.getElementById('year').textContent=new Date().getFullYear();
+render();
+})();
+</script>
+</body>
+</html>
